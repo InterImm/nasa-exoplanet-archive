@@ -1,0 +1,307 @@
+name: NASA Exoplanet Archive
+description: Exoplanet data from NASA Exoplanet Archive.
+contributors:
+  - name: Interplanetary Immigration Center
+    github: InterImm
+data:
+  - path: confirmed_exoplanets.csv
+    format: csv
+    size: 21K
+    updated_at: "2020-01-30"
+    fields:
+      - name: pl_hostname
+        description: Host Name
+      - name: pl_letter
+        description: Planet Letter
+      - name: pl_name
+        description: Planet Name
+      - name: pl_discmethod
+        description: Discovery Method
+      - name: pl_controvflag
+        description: Controversial Flag
+      - name: pl_pnum
+        description: Number of Planets in System
+      - name: pl_orbper
+        description: Orbital Period [days]
+      - name: pl_orbpererr1
+        description: Orbital Period Upper Unc. [days]
+      - name: pl_orbpererr2
+        description: Orbital Period Lower Unc. [days]
+      - name: pl_orbperlim
+        description: Orbital Period Limit Flag
+      - name: pl_orbsmax
+        description: Orbit Semi-Major Axis [AU])
+      - name: pl_orbsmaxerr1
+        description: Orbit Semi-Major Axis Upper Unc. [AU]
+      - name: pl_orbsmaxerr2
+        description: Orbit Semi-Major Axis Lower Unc. [AU]
+      - name: pl_orbsmaxlim
+        description: Orbit Semi-Major Axis Limit Flag
+      - name: pl_orbeccen
+        description: Eccentricity
+      - name: pl_orbeccenerr1
+        description: Eccentricity Upper Unc.
+      - name: pl_orbeccenerr2
+        description: Eccentricity Lower Unc.
+      - name: pl_orbeccenlim
+        description: Eccentricity Limit Flag
+      - name: pl_orbincl
+        description: Inclination [deg]
+      - name: pl_orbinclerr1
+        description: Inclination Upper Unc. [deg]
+      - name: pl_orbinclerr2
+        description: Inclination Lower Unc. [deg]
+      - name: pl_orbincllim
+        description: Inclination Limit Flag
+      - name: pl_bmassj
+        description: Planet Mass or M*sin(i) [Jupiter mass]
+      - name: pl_bmassjerr1
+        description: Planet Mass or M*sin(i) Upper Unc. [Jupiter mass]
+      - name: pl_bmassjerr2
+        description: Planet Mass or M*sin(i) Lower Unc. [Jupiter mass]
+      - name: pl_bmassjlim
+        description: Planet Mass or M*sin(i) Limit Flag
+      - name: pl_bmassprov
+        description: Planet Mass or M*sin(i) Provenance
+      - name: pl_radj
+        description: Planet Radius [Jupiter radii]
+      - name: pl_radjerr1
+        description: Planet Radius Upper Unc. [Jupiter radii]
+      - name: pl_radjerr2
+        description: Planet Radius Lower Unc. [Jupiter radii]
+      - name: pl_radjlim
+        description: Planet Radius Limit Flag
+      - name: pl_dens
+        description: Planet Density [g/cm**3]
+      - name: pl_denserr1
+        description: Planet Density Upper Unc. [g/cm**3]
+      - name: pl_denserr2
+        description: Planet Density Lower Unc. [g/cm**3]
+      - name: pl_denslim
+        description: Planet Density Limit Flag
+      - name: pl_ttvflag
+        description: TTV Flag
+      - name: pl_kepflag
+        description: Kepler Field Flag
+      - name: pl_k2flag
+        description: K2 Mission Flag
+      - name: pl_nnotes
+        description: Number of Notes
+      - name: ra_str
+        description: RA [sexagesimal]
+      - name: ra
+        description: RA [decimal degrees]
+      - name: dec_str
+        description: Dec [sexagesimal]
+      - name: dec
+        description: Dec [decimal degrees]
+      - name: st_dist
+        description: Distance [pc]
+      - name: st_disterr1
+        description: Distance Upper Unc. [pc]
+      - name: st_disterr2
+        description: Distance Lower Unc. [pc]
+      - name: st_distlim
+        description: Distance Limit Flag
+      - name: gaia_dist
+        description: Gaia Distance [pc]
+      - name: gaia_disterr1
+        description: Gaia Distance Upper Unc. [pc]
+      - name: gaia_disterr2
+        description: Gaia Distance Lower Unc. [pc]
+      - name: gaia_distlim
+        description: Gaia Distance Limit Flag
+      - name: st_optmag
+        description: Optical Magnitude [mag]
+      - name: st_optmagerr
+        description: Optical Magnitude Unc. [mag]
+      - name: st_optmaglim
+        description: Optical Magnitude Limit Flag
+      - name: st_optband
+        description: Optical Magnitude Band
+      - name: gaia_gmag
+        description: G-band (Gaia) [mag]
+      - name: gaia_gmagerr
+        description: G-band (Gaia) Unc. [mag]
+      - name: gaia_gmaglim
+        description: G-band (Gaia) Limit Flag
+      - name: st_teff
+        description: Effective Temperature [K]
+      - name: st_tefferr1
+        description: Effective Temperature Upper Unc. [K]
+      - name: st_tefferr2
+        description: Effective Temperature Lower Unc. [K]
+      - name: st_tefflim
+        description: Effective Temperature Limit Flag
+      - name: st_mass
+        description: Stellar Mass [Solar mass]
+      - name: st_masserr1
+        description: Stellar Mass Upper Unc. [Solar mass]
+      - name: st_masserr2
+        description: Stellar Mass Lower Unc. [Solar mass]
+      - name: st_masslim
+        description: Stellar Mass Limit Flag
+      - name: st_rad
+        description: Stellar Radius [Solar radii]
+      - name: st_raderr1
+        description: Stellar Radius Upper Unc. [Solar radii]
+      - name: st_raderr2
+        description: Stellar Radius Lower Unc. [Solar radii]
+      - name: st_radlim
+        description: Stellar Radius Limit Flag
+      - name: rowupdate
+        description: Date of Last Update
+      - name: pl_facility
+        description: Discovery Facility
+  - path: confirmed_exoplanets.json
+    format: json
+    size: 70K
+    updated_at: "2020-01-30"
+    fields:
+      - name: pl_hostname
+        description: Host Name
+      - name: pl_letter
+        description: Planet Letter
+      - name: pl_name
+        description: Planet Name
+      - name: pl_discmethod
+        description: Discovery Method
+      - name: pl_controvflag
+        description: Controversial Flag
+      - name: pl_pnum
+        description: Number of Planets in System
+      - name: pl_orbper
+        description: Orbital Period [days]
+      - name: pl_orbpererr1
+        description: Orbital Period Upper Unc. [days]
+      - name: pl_orbpererr2
+        description: Orbital Period Lower Unc. [days]
+      - name: pl_orbperlim
+        description: Orbital Period Limit Flag
+      - name: pl_orbsmax
+        description: Orbit Semi-Major Axis [AU])
+      - name: pl_orbsmaxerr1
+        description: Orbit Semi-Major Axis Upper Unc. [AU]
+      - name: pl_orbsmaxerr2
+        description: Orbit Semi-Major Axis Lower Unc. [AU]
+      - name: pl_orbsmaxlim
+        description: Orbit Semi-Major Axis Limit Flag
+      - name: pl_orbeccen
+        description: Eccentricity
+      - name: pl_orbeccenerr1
+        description: Eccentricity Upper Unc.
+      - name: pl_orbeccenerr2
+        description: Eccentricity Lower Unc.
+      - name: pl_orbeccenlim
+        description: Eccentricity Limit Flag
+      - name: pl_orbincl
+        description: Inclination [deg]
+      - name: pl_orbinclerr1
+        description: Inclination Upper Unc. [deg]
+      - name: pl_orbinclerr2
+        description: Inclination Lower Unc. [deg]
+      - name: pl_orbincllim
+        description: Inclination Limit Flag
+      - name: pl_bmassj
+        description: Planet Mass or M*sin(i) [Jupiter mass]
+      - name: pl_bmassjerr1
+        description: Planet Mass or M*sin(i) Upper Unc. [Jupiter mass]
+      - name: pl_bmassjerr2
+        description: Planet Mass or M*sin(i) Lower Unc. [Jupiter mass]
+      - name: pl_bmassjlim
+        description: Planet Mass or M*sin(i) Limit Flag
+      - name: pl_bmassprov
+        description: Planet Mass or M*sin(i) Provenance
+      - name: pl_radj
+        description: Planet Radius [Jupiter radii]
+      - name: pl_radjerr1
+        description: Planet Radius Upper Unc. [Jupiter radii]
+      - name: pl_radjerr2
+        description: Planet Radius Lower Unc. [Jupiter radii]
+      - name: pl_radjlim
+        description: Planet Radius Limit Flag
+      - name: pl_dens
+        description: Planet Density [g/cm**3]
+      - name: pl_denserr1
+        description: Planet Density Upper Unc. [g/cm**3]
+      - name: pl_denserr2
+        description: Planet Density Lower Unc. [g/cm**3]
+      - name: pl_denslim
+        description: Planet Density Limit Flag
+      - name: pl_ttvflag
+        description: TTV Flag
+      - name: pl_kepflag
+        description: Kepler Field Flag
+      - name: pl_k2flag
+        description: K2 Mission Flag
+      - name: pl_nnotes
+        description: Number of Notes
+      - name: ra_str
+        description: RA [sexagesimal]
+      - name: ra
+        description: RA [decimal degrees]
+      - name: dec_str
+        description: Dec [sexagesimal]
+      - name: dec
+        description: Dec [decimal degrees]
+      - name: st_dist
+        description: Distance [pc]
+      - name: st_disterr1
+        description: Distance Upper Unc. [pc]
+      - name: st_disterr2
+        description: Distance Lower Unc. [pc]
+      - name: st_distlim
+        description: Distance Limit Flag
+      - name: gaia_dist
+        description: Gaia Distance [pc]
+      - name: gaia_disterr1
+        description: Gaia Distance Upper Unc. [pc]
+      - name: gaia_disterr2
+        description: Gaia Distance Lower Unc. [pc]
+      - name: gaia_distlim
+        description: Gaia Distance Limit Flag
+      - name: st_optmag
+        description: Optical Magnitude [mag]
+      - name: st_optmagerr
+        description: Optical Magnitude Unc. [mag]
+      - name: st_optmaglim
+        description: Optical Magnitude Limit Flag
+      - name: st_optband
+        description: Optical Magnitude Band
+      - name: gaia_gmag
+        description: G-band (Gaia) [mag]
+      - name: gaia_gmagerr
+        description: G-band (Gaia) Unc. [mag]
+      - name: gaia_gmaglim
+        description: G-band (Gaia) Limit Flag
+      - name: st_teff
+        description: Effective Temperature [K]
+      - name: st_tefferr1
+        description: Effective Temperature Upper Unc. [K]
+      - name: st_tefferr2
+        description: Effective Temperature Lower Unc. [K]
+      - name: st_tefflim
+        description: Effective Temperature Limit Flag
+      - name: st_mass
+        description: Stellar Mass [Solar mass]
+      - name: st_masserr1
+        description: Stellar Mass Upper Unc. [Solar mass]
+      - name: st_masserr2
+        description: Stellar Mass Lower Unc. [Solar mass]
+      - name: st_masslim
+        description: Stellar Mass Limit Flag
+      - name: st_rad
+        description: Stellar Radius [Solar radii]
+      - name: st_raderr1
+        description: Stellar Radius Upper Unc. [Solar radii]
+      - name: st_raderr2
+        description: Stellar Radius Lower Unc. [Solar radii]
+      - name: st_radlim
+        description: Stellar Radius Limit Flag
+      - name: rowupdate
+        description: Date of Last Update
+      - name: pl_facility
+        description: Discovery Facility
+references:
+  - name: NASA EXOPLANET ARCHIVE
+    link: https://exoplanetarchive.ipac.caltech.edu
