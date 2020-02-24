@@ -4,7 +4,7 @@ contributors:
   - name: Interplanetary Immigration Center
     github: InterImm
 data:
-  - path: confirmed_exoplanets.csv
+  - path: dataset/confirmed_exoplanets.csv
     format: csv
     size: 21K
     updated_at: "2020-01-30"
@@ -153,7 +153,7 @@ data:
         description: Date of Last Update
       - name: pl_facility
         description: Discovery Facility
-  - path: confirmed_exoplanets.json
+  - path: dataset/confirmed_exoplanets.json
     format: json
     size: 70K
     updated_at: "2020-01-30"
